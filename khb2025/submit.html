@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/submit.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>関西俳句バトル2025　投句フォーム</title>
+    <link rel="stylesheet" href="css/submit.css" type="text/css">
+    </head>
+<body>
+<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfZNCzbTuJtXr1P0_Qb-Luii1IOVjQdGYUgpyqkdp8YxjcvbQ/formResponse?embedded=true" 
+    method="POST"
+    target="hidden_iframe"
+    onsubmit="submitted=true;"
+    class="submitform">
+<div class="header">
+<h2>関西俳句バトル2025　投句フォーム</h2>
+</div>
+    「関西俳句バトル2025」の投句受付は終了しました。
+<div id="form">
+<h3>チーム情報</h3>
+<p>エントリー時の情報と合わせてください。エントリー時の情報が分からない場合は、自動返信メールを確認してください。全角・半角に注意してください。</p>
+<p><input class="haiku" name="entry.1986237800" placeholder="チーム名" required><br>
+<input class="haiku" name="entry.920746324" placeholder="メールアドレス" type="email" required><br>
+
+<p>俳句は基本的に一行棒書きで記入してください。また、氏名についても、姓名間にスペースは入れないでください。<br>例）初暦真紅をもつて始まりぬ　　藤田湘子</p>
+<h3>リーグ戦①　兼題「氷柱」</h3>
+<p><input class="haiku" name="entry.2099041445" placeholder="先鋒句" required>　　<input class="name" name="entry.754038290" placeholder="作者" required><br>
+<input class="haiku" name="entry.631048486" placeholder="中堅句" required>　　<input class="name" name="entry.1731782796" placeholder="作者" required><br>
+<input class="haiku" name="entry.700615604" placeholder="大将句" required>　　<input class="name" name="entry.504831758" placeholder="作者" required></p>
+
+<h3>リーグ戦②　兼題「白鳥」</h3>
+<p><input class="haiku" name="entry.1969961142" placeholder="先鋒句" required>　　<input class="name" name="entry.225174723" placeholder="作者" required><br>
+<input class="haiku" name="entry.720810145" placeholder="中堅句" required>　　<input class="name" name="entry.299656637" placeholder="作者" required><br>
+<input class="haiku" name="entry.198909606" placeholder="大将句" required>　　<input class="name" name="entry.336062147" placeholder="作者" required></p>
+
+<h3>リーグ戦③　兼題「関」</h3>
+<p><input class="haiku" name="entry.2056770193" placeholder="先鋒句" required>　　<input class="name" name="entry.2123697627" placeholder="作者" required><br>
+<input class="haiku" name="entry.1656815498" placeholder="中堅句" required>　　<input class="name" name="entry.1255780163" placeholder="作者" required><br>
+<input class="haiku" name="entry.34338146" placeholder="大将句" required>　　<input class="name" name="entry.1649419061" placeholder="作者" required></p>
+
+<h3>決勝戦　兼題「雑煮」</h3>
+<p><input class="haiku" name="entry.1298998029" placeholder="先鋒句" required>　　<input class="name" name="entry.111238642" placeholder="作者" required><br>
+<input class="haiku" name="entry.37830618" placeholder="次鋒句" required>　　<input class="name" name="entry.523410493" placeholder="作者" required><br>
+<input class="haiku" name="entry.422144799" placeholder="中堅句" required>　　<input class="name" name="entry.80474428" placeholder="作者" required><br>
+<input class="haiku" name="entry.1260825403" placeholder="副将句" required>　　<input class="name" name="entry.1709474016" placeholder="作者" required><br>
+<input class="haiku" name="entry.1814188013" placeholder="大将句" required>　　<input class="name" name="entry.983752623" placeholder="作者" required></p>
+</p>
+<p><input id="agree" type="checkbox" value="投句は、すべて自作・未発表であることを宣誓します。また、投句内容に誤りがないことを確認しました。" name="entry.1582796102"  required/> <label for="agree">投句は、すべて自作・未発表であることを宣誓します。また、投句内容に誤りがないことを確認しました。</label></p>
+<input id="submitting" class="submit" type="submit" value="送信">
+</form>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){window.location='finish.html';}"></iframe>
+</div>
+</body>
+</html>
