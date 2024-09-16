@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+:root {
+    --grey: #333;
+    --white: #fff;
+    --red: #cc1717;
+    --deepred: #a30000;
+    --pastelred: #ff9595;
+}
+body{
+    margin: 0rem;
+}
+.header {
+    background-image: linear-gradient(var(--red), var(--pastelred));
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 6rem;
+}
+#top{
+    padding-top: 7rem;
+}
+
+.contents {
+ padding: 2rem;
+}
+.btn {
+display: flex;
+    box-sizing: border-box;
+    background-color: #cbfd23;
+    color: #000000;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 15%;
+}
+.wrapper a{
+    font-size: 1rem;
+    text-decoration: none;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+h1 {
+font-weight:600;
+font-size: 3em;
+color: black;
+}
+h2 {
+font-weight:600;
+font-size: 2em;
+color: black;
+}
+
+body {
+font-family: 'Noto Sans JP', sans-serif;
+background-color: white;
+}

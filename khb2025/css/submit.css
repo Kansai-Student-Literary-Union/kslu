@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+/*COLORS================================================ */
+:root {
+    --grey: #333;
+    --white: #fff;
+    --pastelred: #ff9595;
+    --deepred: #a30000;
+    --pastelyellow: #fff7c9;
+}
+
+/*GENERAL STYLING================================================ */
+*{
+    font-family: 'Noto Sans JP', sans-serif;
+    }
+body {
+    font-size: 100%;
+	color: var(--grey);
+	}
+
+/*COMMON================================================ */
+p {
+    line-height: 1.7;
+}
+
+header,
+h2 {
+    font-size: 2rem;
+}
+
+
+/*HEADER================================================ */
+.header {
+        background-image: linear-gradient(var(--pastelred), var(--white));
+        padding: 0.2rem 0;
+}
+
+
+.loading {
+    display: none;
+}
+
+.haiku {
+    background: rgba(255,255,255,.6);
+    padding: 0.5rem;
+    width: 70%;
+    font-size: 1em;
+    margin-bottom: 0.5rem;
+}
+.name {
+    background: rgba(255,255,255,.6);
+    padding: 0.5rem;
+    width: 25%;
+    font-size: 1em;
+    margin-bottom: 0.5rem;
+}
+.submit {
+    background: var(--grey);
+    color: var(--white);
+    font-size: 1em;
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+.submit:hover {
+    background: var(--deepred);
+}
+
+.haiku:focus-visible {
+    background-color: var(--pastelyellow);
+}
+.name:focus-visible {
+    background-color: var(--pastelyellow);
+}
+
+
+@media (max-width: 700px) {
+    /* Common */
+        h2 {
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1rem;
+        }  
+        .haiku {
+            background: rgba(255,255,255,.6);
+            padding: 0.5rem;
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+        .name {
+            background: rgba(255,255,255,.6);
+            padding: 0.5rem;
+            width: 40%;
+            margin-bottom: 0.5rem;
+        }
+        .submit {
+            background: var(--grey);
+            color: var(--white);
+            display: block;
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        
+
+    }
